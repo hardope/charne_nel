@@ -9,6 +9,7 @@ export default defineConfig({
     react()
   ],
   server: {
-    host: '0.0.0.0'  // Listen on all available network interfaces
+    host: '0.0.0.0',
+    allowedHosts: 'all'
   }
 })
