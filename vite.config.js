@@ -8,7 +8,4 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-  server: {
-    host: 'charne-nel.onrender.com'  // Listen on all available network interfaces
-  }
 })
