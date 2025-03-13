@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import { FaLinkedin, FaEnvelope, FaBars } from 'react-icons/fa';
 import portraitImg from '../assets/portrait.png';
 import stars from '../assets/stars.png';
 import figma from '../assets/figma.png';
@@ -16,77 +15,13 @@ import notion from '../assets/notion.png';
 import bee from '../assets/bee.png';
 import box from '../assets/box.png';
 import vscode from '../assets/vscode.png';
-import charne from '../assets/charne.svg';
+import Nav from './Nav';
 
 const HeadBlock = () => {
-    const route = window.location.pathname;
 
     return (
         <div className='h-screen'>
-            <nav className="w-full bg-[#FE5701] h-[8vh] px-6 py-4 flex items-center justify-between">
-                <img src={charne} alt="Charne logo" className="h-8" />
-                {/* Desktop Navigation */}
-                <ul className="hidden md:flex space-x-24 text-white">
-                    <li>
-                        <a
-                            href="#home"
-                            className={`hover:text-black transition ${route === '/' ? 'border-2 p-2 border-white rounded-xl' : ''}`}
-                        >
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#projects"
-                            className={`hover:text-white transition ${route === '/projects' ? 'border-2 p-2 rounded-xl' : ''}`}
-                        >
-                            Projects
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#contact"
-                            className={`hover:text-white transition ${route === '/contact' ? 'border-2 p-2 rounded-xl' : ''}`}
-                        >
-                            Contact
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#cv"
-                            className={`hover:text-white transition ${route === '/cv' ? 'border-2 p-2 rounded-xl' : ''}`}
-                        >
-                            CV
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="https://www.linkedin.com/in/charne-nel-723326265/"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="hover:text-white transition"
-                        >
-                            <FaLinkedin size={25} />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="mailto:Charne0611@gmail.com"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="hover:text-white transition"
-                        >
-                            <FaEnvelope size={25} />
-                        </a>
-                    </li>
-                </ul>
-                {/* Mobile Navigation (Hamburger) */}
-                <div className="md:hidden text-white">
-                    <button>
-                        <FaBars size={25} />
-                    </button>
-                </div>
-            </nav>
+            <Nav />
             <section
                 id="home"
                 className="w-full flex flex-col md:flex-row bg-[#F5F5F5] text-gray-800"
@@ -105,28 +40,30 @@ const HeadBlock = () => {
                         alt="Stars"
                         className="hidden md:block absolute top-5 right-60 h-[15vh]"
                     />
-                    <h3 className="text-2xl md:text-3xl font-semibold mt-20 mb-5">
-                        About Charne
-                    </h3>
-                    <p className="mb-1 p-1">
-                        As a UX/UI Designer with a strong foundation in AI, I bring a 
-                        unique perspective and a passion for solving complex problems 
-                        in innovative ways.
-                    </p>
-                    <p className="mb-1 p-1">
-                        My journey into design was inspired by the potential of AI to 
-                        revolutionise how we interact with technology, driving me to 
-                        create user-centric solutions that are both intuitive and impactful.
-                    </p>
-                    <p className="mb-1 p-1">
-                        I thrive on understanding user behaviours and translating those insights 
-                        into designs that seamlessly balance functionality and aesthetics.
-                    </p>
-                    <p className="mb-1 p-1">
-                        My goal is to harness AI to push the boundaries of digital experiences, 
-                        creating products that genuinely improve people’s lives and make advanced 
-                        technologies more accessible and engaging.
-                    </p>
+                    <div className='flex flex-col justify-center h-full'>
+                        <h3 className="text-2xl md:text-3xl font-semibold mt-20 mb-5">
+                            About Charne
+                        </h3>
+                        <p className="mb-3">
+                            As a UX/UI Designer with a strong foundation in AI, I bring a 
+                            unique perspective and a passion for solving complex problems 
+                            in innovative ways.
+                        </p>
+                        <p className="mb-3">
+                            My journey into design was inspired by the potential of AI to 
+                            revolutionise how we interact with technology, driving me to 
+                            create user-centric solutions that are both intuitive and impactful.
+                        </p>
+                        <p className="mb-3">
+                            I thrive on understanding user behaviours and translating those insights 
+                            into designs that seamlessly balance functionality and aesthetics.
+                        </p>
+                        <p className="mb-3">
+                            My goal is to harness AI to push the boundaries of digital experiences, 
+                            creating products that genuinely improve people’s lives and make advanced 
+                            technologies more accessible and engaging.
+                        </p>
+                    </div>
                 </div>
             </section>
             {/* Bottom Icons (hidden on mobile) */}

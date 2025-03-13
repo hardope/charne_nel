@@ -4,10 +4,11 @@ import phoneMockup from '../assets/phone.png';
 import vibeMockup from '../assets/laptop2.png';
 import HeadBlock from '../components/HeadBlock';
 import FooterBlock from '../components/FooterBlock';
+import { useNavigate } from 'react-router-dom';
 
 const HomePage = () => {
     const route = window.location.pathname;
-    console.log(route);
+    const navigate = useNavigate()
 
     return (
         <div className="w-full overflow-x-hidden font-sans">
@@ -30,11 +31,11 @@ const HomePage = () => {
                             <li>Provide insights into market trends and valuations.</li>
                         </ul>
                     </div>
-                    <button className="bg-[#F7EEE3] text-[#FE5701] py-2 px-6 rounded-full font-bold">
+                    <button className="bg-[#F7EEE3] text-[#FE5701] py-2 px-6 rounded-full font-bold" onClick={() => navigate('/projects/trojan')}>
                         Read
                     </button>
                 </div>
-                <div className="w-full md:w-1/2 mb-6 md:mb-0 flex justify-center hidden md:flex ">
+                <div className="w-full md:w-1/2 mb-6 md:mb-0 justify-center hidden md:flex ">
                     <img
                         src={laptopMockup}
                         alt="Laptop mockup"
