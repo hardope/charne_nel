@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from "react-route
 import LandingPage from './pages/LandingPage'
 import TrojanHorse from './pages/Trojan'
 import { useLayoutEffect } from 'react';
+import Althea from './pages/Althea';
 
 const Wrapper = ({ children }) => {
 	const location = useLocation();
@@ -23,6 +24,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<LandingPage />} />
 					<Route path='projects/trojan' element={<TrojanHorse />} />
+					<Route path='projects/althea' element={<Althea />} />
 				</Routes>
 			</Wrapper>
 		</Router>
