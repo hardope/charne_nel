@@ -35,11 +35,13 @@ const HeadBlock = () => {
 
                 {/* Right side: orange background with text */}
                 <div className="w-full h-auto md:h-[84vh] bg-[#FA982D] p-8 md:pl-16 md:py-12 font-sans text-white text-center relative">
-                    <img
-                        src={stars}
-                        alt="Stars"
-                        className="hidden md:block absolute top-5 right-60 h-[15vh]"
-                    />
+                    <div className='flex justify-center'>
+                        <img
+                            src={stars}
+                            alt="Stars"
+                            className="hidden md:block absolute top-5 h-[15vh]"
+                        />
+                    </div>
                     <div className='flex flex-col justify-center h-full'>
                         <h3 className="text-2xl md:text-3xl font-semibold mt-20 mb-5">
                             About Charne
