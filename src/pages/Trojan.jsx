@@ -40,7 +40,7 @@ const TrojanHorse = () => {
                 </div>
 
                 <div className="bg-[#8C94EF] p-2 rounded-lg mb-6 flex flex-col md:flex-row">
-                    <h2 className="text-3xl font-bold mb-2 md:mb-0 md:w-1/5">Tools:</h2>
+                    <h2 className="text-3xl font-bold mb-2 md:mb-0 md:w-1/5 pr-2">Tools:</h2>
                     <p className="md:w-4/5">
                         Interview skills | Google Surveys | Miro | FigJam | Figma | A/B Testing |
                         Desirability Testing | Design Thinking

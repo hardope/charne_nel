@@ -4,6 +4,7 @@ import LandingPage from './pages/LandingPage'
 import TrojanHorse from './pages/Trojan'
 import { useLayoutEffect } from 'react';
 import Althea from './pages/Althea';
+import TwinRehab from './pages/TwinRehab';
 
 const Wrapper = ({ children }) => {
 	const location = useLocation();
@@ -25,6 +26,7 @@ function App() {
 					<Route path='/' element={<LandingPage />} />
 					<Route path='projects/trojan' element={<TrojanHorse />} />
 					<Route path='projects/althea' element={<Althea />} />
+					<Route path='projects/twin-rehab' element={<TwinRehab />} />
 				</Routes>
 			</Wrapper>
 		</Router>
