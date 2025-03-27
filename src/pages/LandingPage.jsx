@@ -32,9 +32,11 @@ const HomePage = () => {
                             <li>Provide insights into market trends and valuations.</li>
                         </ul>
                     </div>
-                    <button className="bg-[#F7EEE3] text-[#FE5701] py-2 px-6 rounded-full font-bold" onClick={() => navigate('/projects/trojan')}>
-                        Read
-                    </button>
+                    <div className='flex justify-center'>
+                        <button className="bg-[#F7EEE3] text-[#FE5701] py-2 px-6 rounded-full font-bold" onClick={() => navigate('/projects/trojan')}>
+                            Read
+                        </button>
+                    </div>
                 </div>
                 <div className="w-full md:w-2/3 mb-6 md:mb-0 justify-center mt-55 md:mt-0 md:flex">
                     <img
@@ -89,9 +91,11 @@ const HomePage = () => {
                         <li>Enhance post-operative recovery time by prescribing personalized exercises derived from a digital twin model, then assess the results to optimize recovery outcomes.</li>
                         <li>Available on iOS (mobile app)</li>
                     </ul>
-                    <button className="bg-[#FF389C] text-white font-bold py-2 px-6 rounded-full hover:bg-orange-600" onClick={() => navigate('/projects/twin-rehab')}>
-                        Read
-                    </button>
+                    <div className='flex justify-center'>
+                        <button className="bg-[#FF389C] text-white font-bold py-2 px-6 rounded-full hover:bg-orange-600" onClick={() => navigate('/projects/twin-rehab')}>
+                            Read
+                        </button>
+                    </div>
                 </div>
                 <div className="w-full md:w-2/3 mb-6 md:mb-0 flex justify-center">
                     <img
@@ -107,14 +111,12 @@ const HomePage = () => {
                 <div className="w-full md:w-1/2">
                     <FooterBlock />
                 </div>
-                <div className="w-full md:w-1/2 text-center text-[#812C00]  text-3xl p-4 md:p-20">
+                <div className="w-full md:w-1/2 text-center text-[#812C00] mt-15 text-3xl p-4 md:p-20">
                     <p>
                         Thanks for scrolling through my portfolio! If you liked what you saw, let’s chat. If you didn’t… well, let’s chat anyway—I love a good design challenge!
                     </p>
                 </div>
             </section>
-
-
         </div>
     );
 };

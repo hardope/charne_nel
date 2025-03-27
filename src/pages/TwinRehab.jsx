@@ -60,7 +60,7 @@ const TwinRehab = () => {
                 <p className="text-3xl font-bold">User Research (Target groups & Pain points) </p>
             </div>
 
-            <div className="text-black grid grid-cols-1 md:grid-cols-2 mt-2 w-full items-center md:w-[95vw] md:mx-auto md:my-3 p-2 text-center justify-between" >
+            <div className="text-black grid grid-cols-1 md:grid-cols-2 mt-2 mb-5 w-full items-center md:w-[95vw] md:mx-auto md:my-3 p-2 text-center justify-between" >
                 <div className="w-[99%] h-full border-1 border-white p-2 rounded-2xl m-1 text-left" style={{ backgroundImage: `url(${head_rehab})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                     <p className="font-bold text-lg">User Group 1: Post-Operative Patients</p> 
                 
@@ -138,7 +138,7 @@ const TwinRehab = () => {
                 </div>
             </div>
 
-            <div className="text-white mt-2 border-1 border-white w-full items-center justify-center md:w-[95vw] md:mx-auto md:my-3 p-2 rounded-2xl text-center" style={{ backgroundImage: `url(${head_rehab})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="text-white mt-6 md:mt-10 border-1 border-white w-full items-center justify-center md:w-[95vw] md:mx-auto md:my-3 p-2 rounded-2xl text-center" style={{ backgroundImage: `url(${head_rehab})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
                 <p className="text-3xl font-bold">Main Features for the TwinRehab app</p>
             </div>
 
